@@ -66,7 +66,7 @@ $ python run.py
  127.0.0.1 - - [24/Jul/2014 09:19:08] "GET /static-flask-bokeh/js/tmp/70464b2b-5ecf-46f0-ae12-606c289da4c9.js HTTP/1.1" 404 -
 ```
 
-* Looking at the HTML rendered:
+* Looking at the HTML rendered (after another request to the page, so the JS files are new):
 
 ```html
 <!doctype html>
