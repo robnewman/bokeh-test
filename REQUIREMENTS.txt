@@ -8,10 +8,7 @@ Pygments==1.6
 SQLAlchemy==0.9.4
 Werkzeug==0.9.6
 argparse==1.2.1
-
-# We don't have Git installed on dmc3|4 - build from svn-src
-# -e git+https://github.com/ContinuumIO/bokeh.git@5b8c12200c1170c1c6a76d8afb22cddf1a7efb1d#egg=bokeh-dev
-
+bokeh==0.5.1
 colorama==0.3.1
 gevent==1.0.1
 gevent-websocket==0.9.3
