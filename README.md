@@ -10,13 +10,13 @@
 ## How to run
 
 * Load everything from REQUIREMENTS file with
-
-    pip install -r REQUIREMENTS.txt
-
+```
+pip install -r REQUIREMENTS.txt
+```
 * From the command line:
-
-    python run.py
-
+```
+python run.py
+```
 
 ## What should happen
 
