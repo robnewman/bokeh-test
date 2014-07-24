@@ -47,6 +47,50 @@ $ python run.py
  127.0.0.1 - - [24/Jul/2014 09:19:08] "GET /static-flask-bokeh/js/tmp/70464b2b-5ecf-46f0-ae12-606c289da4c9.js HTTP/1.1" 404 -
 ```
 
+* Looking at the HTML rendered:
+
+```html
+<!doctype html>
+<html>
+  <head>
+    <title>
+  Circle Plot Test
+    </title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .bokeh_canvas_wrapper {
+    width: 10em !important;
+  }
+  .bokeh .btn-group {
+    margin-left: 9em;
+  }
+  </style>
+
+  </head>
+  <body>
+  <div class="container-fluid">
+    <div class="page-header">
+      <h1>Circle Plot</h1>
+    </div>
+    <div id="3ea19b8f-3229-43b2-bfb8-9a7caf9ea5be" class="col-md-10 col-md-offset-1">
+      <script
+    src="static-flask-bokeh/js/tmp/3ea19b8f-3229-43b2-bfb8-9a7caf9ea5be.js"
+    id="76f4b1da-d388-4603-9943-fdeba1476f57"
+    async="true"
+    data-bokeh-data="static"
+    data-bokeh-modelid="3ea19b8f-3229-43b2-bfb8-9a7caf9ea5be"
+    data-bokeh-modeltype="Plot"
+></script>
+    </div>
+  </div>
+  </body>
+</html>
+```
+
+Look at the `<script src="">` path. It is a relative link. If I click
+on that link I see a 404 error. That shouldn't be.
+
 ## What do I think the problem is?
 
 Either Flask or Bokeh does not look in the specified TMP directory.
