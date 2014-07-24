@@ -8,7 +8,27 @@
 * The `plot.html` template is rendered with a request to the root dir ('/')
 
 ## How to run
-
+* Assumptions: you have `virtualenv` and `pip` installed
+* Build a virtual environment
+```
+$ virtualenv venv-name
+```
+* Activate the venv
+```
+$ cd venv-name
+$ source bin/activate
+```
+* Clone the repo
+```
+$ git clone https://github.com/robnewman/bokeh-test
+```
+* Rename `bokeh-test` to `www`
+```
+$ mv bokeh-test www
+* Change directory to `www`
+```
+$ cd www
+```
 * Load everything from REQUIREMENTS file with
 ```
 pip install -r REQUIREMENTS.txt
