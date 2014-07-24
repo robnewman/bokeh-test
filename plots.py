@@ -26,8 +26,8 @@ def simple_plot(plot, tmp_dir):
 
     res = Resources()
     res.mode = "server"
-    res.js_files = [js_static_js + "bokeh.min.js"]
-    res.css_files = [js_static_css + "bokeh.min.css"]
+    res.js_files = [js_static_js + "bokeh-0.4.min.js"]
+    res.css_files = [js_static_css + "bokeh-0.4.min.css"]
 
     js, tag = autoload_static(plot,
                               res,
