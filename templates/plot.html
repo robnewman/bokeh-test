@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Data Services Metrics Plotting
+{% endblock title %}
+
+{% block extra_head %}
+  <style type="text/css">
+  .bokeh_canvas_wrapper {
+    width: 10em !important;
+  }
+  .bokeh .btn-group {
+    margin-left: 9em;
+  }
+  </style>
+{% endblock extra_head %}
+
+{% block content %}
+  <div class="container-fluid">
+    <div class="page-header">
+      <h1>Data Services Metrics Plotting <small>Host listed in graph header</small></h1>
+      <dl class="dl-horizontal">
+        <dt>1</dt>
+        <dd>True</dd>
+        <dt>0</dt>
+        <dd>False</dd>
+      </dl>
+    </div>
+    <div id="{{ id1 }}" class="col-md-10 col-md-offset-1">
+      {{ tag1|safe }}
+    </div>
+    <div id="{{ id2 }}" class="col-md-10 col-md-offset-1">
+      {{ tag2|safe }}
+    </div>
+    <div id="{{ id3 }}" class="col-md-10 col-md-offset-1">
+      {{ tag3|safe }}
+    </div>
+    <div id="{{ id4 }}" class="col-md-10 col-md-offset-1">
+      {{ tag4|safe }}
+    </div>
+  </div>
+{% endblock content %}
