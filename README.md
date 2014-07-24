@@ -25,6 +25,7 @@ $ git clone https://github.com/robnewman/bokeh-test
 * Rename `bokeh-test` to `www`
 ```
 $ mv bokeh-test www
+```
 * Change directory to `www`
 ```
 $ cd www
