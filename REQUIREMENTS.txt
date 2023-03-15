@@ -4,7 +4,7 @@ Markdown==2.4.1
 MarkupSafe==0.23
 PyYAML==3.11
 Pygments==1.6
-Werkzeug==0.9.6
+Werkzeug==2.2.3
 argparse==1.2.1
 bokeh==0.5.1
 colorama==0.3.1
