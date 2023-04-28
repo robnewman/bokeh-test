@@ -3,7 +3,7 @@ Jinja2==2.11.3
 Markdown==2.4.1
 MarkupSafe==0.23
 PyYAML==5.4
-Pygments==1.6
+Pygments==2.7.4
 Werkzeug==2.2.3
 argparse==1.2.1
 bokeh==0.5.1
@@ -21,7 +21,7 @@ pandas==0.14.0
 pystache==0.5.4
 python-dateutil==2.2
 pytz==2013b
-redis==2.10.1
+redis==4.4.4
 requests==2.3.0
 six==1.7.2
 websocket==0.2.1
