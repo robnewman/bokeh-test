@@ -8,7 +8,7 @@ Werkzeug==2.2.3
 argparse==1.2.1
 bokeh==0.5.1
 colorama==0.3.1
-gevent==1.0.1
+gevent==23.9.0
 gevent-websocket==0.9.3
 greenlet==0.4.2
 importlib==1.0.3
